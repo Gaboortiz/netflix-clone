@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix Clone</title>
+  <link rel="icon" type="image/icon" href="img/netflix_logo_icon_170919.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">NETFLIX</div>
+    <nav>
+      <a href="#Home">Início</a>
+      <a href="#Series">Séries</a>
+      <a href="#Movies">Filmes</a>
+      <a href="#Tranding">Bombando</a>
+      <a href="#Minha lista">Minha lista</a>
+      <a href="#Navigate through language">Navegar por idiomas</a>
+    </nav>
+  </header>
+
+  <section class="hero-banner">
+    <img src="banner/narutobanner.jpg" alt="Banner">
+    <div class="banner-content">
+      <h1>Naruto Shippuden</h1>
+      
+      <p>Naruto Shippuden continua a história de Naruto Uzumaki, acompanhando-o dois anos e meio após a série original, enquanto ele retorna à Vila da Folha depois de treinar com Jiraiya. Ele agora enfrenta a ameaça da organização Akatsuki e busca trazer Sasuke de volta para a vila, enquanto também se esforça para se tornar o maior Hokage de todos.</p>
+      
+      <button>▶ Assistir</button>
+      <button>Mais informações</button>
+    </div>
+  </section>
+
+  <!-- Minha lista -->
+  <section class="movie-list">
+    <h2>Minha lista</h2>
+    <div class="carousel-wrapper">
+        <button class="arrow left" onclick="scrollLeft('carousel1')">❮</button>
+        <div class="carousel" id="carousel1">
+      <img src="img/squidgameempe.jpg" alt="Round6">
+      <img src="img/haikyuuempe.jpg" alt="Haikyuu">
+      <img src="img/theflashempe.jpg" alt="The Flash">
+      <img src="img/cobrakaiempe.jpg" alt="">
+      <img src="img/super_marioempe.jpg" alt="The Super Mario Bros">
+    </div>
+    <button class="arrow right" onclick="scrollRight('carousel1')">❯</button>
+    </div>
+  </section>
+
+  <!-- Principais escolhas -->
+  <section class="movie-list">
+    <h2>Principais escolhas do dia para você</h2>
+    <div class="carousel-wrapper">
+        <button class="arrow left" onclick="moveLeft('carousel2')">❮</button>
+        <div class="carousel" id="carousel2">
+        <img src="img/alice_in_bordeland.jpeg" alt="Alice in Bordeland">
+        <img src="img/stranger_thingsempe.jpg" alt="">
+        <img src="img/breaking_bad.jpg" alt="Breaking Bad">
+        <img src="img/fast_furiousempe.jpg" alt="Velozes e furiosos8">
+        <img src="img/Brooklyn_Nine-Nine-1.jpg" alt="Blooklyn nine-nine">
+        <img src="img/regular_show.jpg" alt="Regular Show">
+        <img src="img/one_piece.jpg" alt="One Piece">
+        <img src="img/walking_empe.jpg" alt="The Walking Dead">
+    </div>
+       <button class="arrow right" onclick="moveRight('carousel2')">❯</button>
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
